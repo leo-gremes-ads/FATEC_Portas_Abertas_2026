@@ -6,7 +6,9 @@ CREATE TABLE IF NOT EXISTS Visitantes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
     email VARCHAR(100) NOT NULL,
-    curso VARCHAR(50) NOT NULL
+    telefone VARCHAR(20),
+    escolaridade VARCHAR(100) NOT NULL,
+    interesse VARCHAR(50) NOT NULL
 );
 
 DROP TABLE IF EXISTS Mensagens;
