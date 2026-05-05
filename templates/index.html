@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Cadastro - Fatec Portas Abertas </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="static/img/logo-CPS.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files aqui da o "style" da pagina-->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="static/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <main class="main">
+
+    <!-- Hero Section aqui é o "CABEÇALHO"-->
+    <section id="hero" class="hero section">
+      <div class="hero-bg">
+        <img src="static/img/hero-bg-light.webp" alt="">
+      </div>
+      <div class="container text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h1 data-aos="fade-up">Bem-Vindos à <span> Fatec-ZL</span></h1>
+          <div class="d-flex">
+            <a href="#nome" class="btn-get-started">Entre, descubra e decida seu futuro</a>
+          </div>
+          <a href="#nome">
+            <img src="static/img/img-capa.png" class="img-fluid hero-img" alt="">
+          </a>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Clients Section / os icones da fatec, cpd, portas abertas e sp-->
+    <section id="clients" class="clients section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-3 col-6 client-logo">
+            <img src="static/img/logo-fatec_zL.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-3 col-6 client-logo">
+            <img src="static/img/logo-CPS.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-3 col-6 client-logo">
+            <img src="static/img/logo-sp.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-3 col-6 client-logo">
+            <img src="static/img/fatecportaslogo.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title parte do CADASTRO-->
+      <div class="container section-title">
+        <h2>Cadastro</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 mt-1 justify-content-center">
+
+          <div class="col-lg-6">
+            <form id="cadastro-form" class="php-email-form" method="POST">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input id="nome" type="text" name="nome" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" name="telefone" class="form-control" placeholder="Telefone">
+                </div>
+
+                <div class="col-md-6">
+                  <select name="escolaridade" class="form-control" required>
+                    <option value="" disabled selected>Escolaridade</option>
+                    <option value="fundamental">Ensino Fundamental</option>
+                    <option value="medio">Ensino Médio Cursando</option>
+                    <option value="tecnico">Ensino Médio Completo</option>
+                    <option value="superior-incompleto">Superior Incompleto</option>
+                    <option value="superior-completo">Superior Completo</option>
+                    <option value="pos">Pós-graduação</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <label>Áreas de Interesse</label>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="logistica" name="areas[]" value="logistica">
+                    <label class="form-check-label" for="logistica">Logística</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="ads" name="areas[]" value="ads">
+                    <label class="form-check-label" for="ads">Análise e Desenvolvimento de Sistemas</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="comex" name="areas[]" value="comex">
+                    <label class="form-check-label" for="comex">Comércio Exterior</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="plasticos" name="areas[]" value="plasticos">
+                    <label class="form-check-label" for="plasticos">Desenvolvimento de Produtos Plásticos</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="multiplataforma" name="areas[]"
+                      value="multiplataforma">
+                    <label class="form-check-label" for="multiplataforma">Desenvolvimento de Softwares
+                      Multiplataforma</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="rh" name="areas[]" value="rh">
+                    <label class="form-check-label" for="rh">Gestão de Recursos Humanos</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gestao" name="areas[]" value="gestao">
+                    <label class="form-check-label" for="gestao">Gestão Empresarial</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="polimeros" name="areas[]" value="polimeros">
+                    <label class="form-check-label" for="polimeros">Polímeros</label>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <button type="submit" id="btn-seguinte">Seguinte</button>
+                  </div>
+
+                </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/aos/aos.js"></script> <!-- faz o logo subir -->
+
+  <!-- Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
