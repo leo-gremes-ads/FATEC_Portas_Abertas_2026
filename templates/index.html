@@ -31,55 +31,56 @@
 <body class="index-page">
 
   <main class="main">
-
-    <!-- Hero Section aqui é o "CABEÇALHO"-->
-    <section id="hero" class="hero section">
-      <div class="hero-bg">
-        <img src="static/img/hero-bg-light.webp" alt="">
-      </div>
-      <div class="container text-center">
-        <div class="d-flex flex-column justify-content-center align-items-center">
-          <h1 data-aos="fade-up">Bem-Vindos à <span> Fatec-ZL</span></h1>
-          <div class="d-flex">
-            <a href="#nome" class="btn-get-started">Entre, descubra e decida seu futuro</a>
+    <div class="primeira-tela">
+      
+      <!-- Hero Section aqui é o "CABEÇALHO"-->
+      <section id="hero" class="hero section">
+        <div class="hero-bg">
+          <img src="static/img/hero-bg-light.webp" alt="">
+        </div>
+        <div class="container text-center">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1 data-aos="fade-up">Bem-Vindos à <span> Fatec-ZL</span></h1>
+            <div class="d-flex">
+              <a href="#nome" class="btn-get-started">Entre, descubra e decida seu futuro</a>
+            </div>
+            <a href="#nome">
+              <img src="static/img/img-capa.png" class="img-fluid hero-img" alt="">
+            </a>
           </div>
-          <a href="#nome">
-            <img src="static/img/img-capa.png" class="img-fluid hero-img" alt="">
-          </a>
         </div>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- Clients Section / os icones da fatec, cpd, portas abertas e sp-->
-    <section id="clients" class="clients section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-3 col-md-3 col-6 client-logo">
-            <img src="static/img/logo-fatec_zL.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-3 col-6 client-logo">
-            <img src="static/img/logo-CPS.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-3 col-6 client-logo">
-            <img src="static/img/logo-sp.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-3 col-6 client-logo">
-            <img src="static/img/fatecportaslogo.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
+  
+      </section><!-- /Hero Section -->
+  
+      <!-- Clients Section / os icones da fatec, cpd, portas abertas e sp-->
+      <section id="clients" class="clients section">
+  
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-xl-3 col-md-3 col-6 client-logo">
+              <img src="static/img/logo-fatec_zL.png" class="img-fluid" alt="">
+            </div><!-- End Client Item -->
+  
+            <div class="col-xl-3 col-md-3 col-6 client-logo">
+              <img src="static/img/logo-CPS.png" class="img-fluid" alt="">
+            </div><!-- End Client Item -->
+  
+            <div class="col-xl-3 col-md-3 col-6 client-logo">
+              <img src="static/img/logo-sp.png" class="img-fluid" alt="">
+            </div><!-- End Client Item -->
+  
+            <div class="col-xl-3 col-md-3 col-6 client-logo">
+              <img src="static/img/fatecportaslogo.png" class="img-fluid" alt="">
+            </div><!-- End Client Item -->
+  
+          </div>
+  
         </div>
-
-      </div>
-
-    </section><!-- /Clients Section -->
-
+  
+      </section><!-- /Clients Section -->
+    </div>
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
@@ -93,7 +94,7 @@
         <div class="row gy-4 mt-1 justify-content-center">
 
           <div class="col-lg-6">
-            <form id="cadastro-form" class="php-email-form" method="POST">
+            <form method="POST" id="cadastro-form" class="php-email-form">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -111,9 +112,10 @@
                 <div class="col-md-6">
                   <select name="escolaridade" class="form-control" required>
                     <option value="" disabled selected>Escolaridade</option>
-                    <option value="fundamental">Ensino Fundamental</option>
-                    <option value="medio">Ensino Médio Cursando</option>
-                    <option value="tecnico">Ensino Médio Completo</option>
+                    <option value="fundamental-incompleto">Ensino Fundamental Incompleto</option>
+                    <option value="fundamental-completo">Ensino Fundamental Completo</option>
+                    <option value="medio-incompleto">Ensino Médio Incompleto</option>
+                    <option value="medio-completo">Ensino Médio Completo</option>
                     <option value="superior-incompleto">Superior Incompleto</option>
                     <option value="superior-completo">Superior Completo</option>
                     <option value="pos">Pós-graduação</option>
@@ -162,6 +164,11 @@
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="polimeros" name="areas[]" value="polimeros">
                     <label class="form-check-label" for="polimeros">Polímeros</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="outros" name="areas[]" value="outros">
+                    <label class="form-check-label" for="outros">Outros</label>
                   </div>
 
                   <div class="col-md-12 text-center">

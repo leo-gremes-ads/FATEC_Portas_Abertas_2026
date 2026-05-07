@@ -64,11 +64,14 @@ if (form) {
       return;
     }
 
-    //const mensagem = `A combinação de ${cor} e ${pedra} revela um novo caminho.`;
+    const mensagem = MENSAGEM;
 
-    document.getElementById("mensagem").innerText = MENSAGEM;
+    document.getElementById("mensagem").innerText = mensagem;
+    const speech = new SpeechSynthesisUtterance(mensagem);
+    speech.lang = 'pt-BR';
+    window.speechSynthesis.speak(speech);
 
-    // 🔥 troca de telas
+    // troca de telas
     form.classList.add("hidden");
     resultado.classList.remove("hidden");
   });
